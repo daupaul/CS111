@@ -1,0 +1,44 @@
+UCLA Fall 2016 CS111 Project 0: Warm-Up Dau-Po Yu 504451468
+
+------------------------------------------------------------
+
+Introduction
+In this assignment, we are required to write a program that
+copies its standard input by read() from descriptor 0 to its
+standard output by write() to descriptor 1. The purpose of
+this project is to make sure we understand Linux, C code, and
+Makefile.
+
+------------------------------------------------------------
+
+Testing Methodolgy
+Test 1
+Copy a existing input file to a non-existing output file. The
+program should create the specified output file, and exit with
+code 0 successfully.
+Test 2
+Copy a existing input file to a existing output file that has
+a different content. The progarm should write and delete all
+old data on the specified file, and exit with code 0
+successfully.
+Test 3
+Both argument "--catch --segfault" and "--segfault --catch"
+should lead to the program catching a segmentation fault using
+signal() to register a SIGSEGV handler. The program should
+exit with code 3 and print error message.
+
+------------------------------------------------------------
+
+This project includes:
+
+lab0.c: C source code to copy its input file to output file
+
+Makefile: Make the source code an executable, and check if
+the program runs properly. Use make, make check, make clean,
+and make dist.
+
+README: This current file that provides a description of the
+project.
+
+backtrace.png, breakpoint.png: Screenshots show that we
+understand how to debug using gdb.

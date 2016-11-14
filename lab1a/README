@@ -1,0 +1,37 @@
+UCLA Fall 2016 CS111 Project 1a: I/O and IPC Dau-Po Yu 504451468
+
+----------------------------------------------------------------
+
+Introduction
+In this assignment, we are required to write a program that
+read single characters in noncanonical input mode, without echo.
+Also, with the --shell option, it will execute a shell in a child
+process, and we have to create another thread in parent to read 
+from shell and write it to terminal. The purpose of this project 
+is to make sure we understand multi-process application, 
+inter-process communication, and exception handling.
+
+----------------------------------------------------------------
+
+Testing Methodolgy
+Without the --shell option, the program will simply show what we 
+type. With the --shell option, we can use shell command, such as
+ls and exit. By using these commands, we can see that the shell 
+and the pipes are working properly.
+
+----------------------------------------------------------------
+
+This project includes:
+
+lab1a.c: C source code of this project.
+
+Makefile: Make the source code an executable. Use make, make clean,
+and make dist.
+
+README: This current file that provides a description of the
+project.
+
+----------------------------------------------------------------
+
+Reference
+https://www.gnu.org/software/libc/manual/html_mono/libc.html#Noncanon-Example

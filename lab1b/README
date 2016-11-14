@@ -1,0 +1,52 @@
+UCLA Fall 2016 CS111 Project 1b: I/O and IPC Dau-Po Yu 504451468
+
+----------------------------------------------------------------
+
+Introduction
+In this assignment, we are required to write a multi-process 
+telnet-like client and server.  We pass our input through a TCP 
+socket and send it to server, which will forward it to a shell.
+The purpose of this project is to make sure we understand 
+multi-process application, basic network communication, and basic
+encryption.
+
+----------------------------------------------------------------
+
+Testing Methodolgy
+We use shell command, such as ls and exit. By using these commands,
+we can see that the shell, the pipes, and the socket are working
+properly. We can also use the --log option to see our record of data.
+Moreover, we have the --encrypt option, so we can encrypt our messsage
+while sending it through the socket.
+
+----------------------------------------------------------------
+
+This project includes:
+
+client.c: C source code of client side.
+
+server.c: C source code of server side.
+
+my.key: my encryption key.
+
+Makefile: Make the source code an executable. Use make, client, server, 
+make clean, and make dist.
+
+README: This current file that provides a description of the
+project.
+
+----------------------------------------------------------------
+
+Reference
+
+17.7 Noncanonical Mode Example
+https://www.gnu.org/software/libc/manual/html_mono/libc.html#Noncanon-Example
+
+Unix Socket - Server Examples
+http://tutorialspoint.com/unix_sockets/socket_server_example.htm
+
+Unix Socket - Client Examples
+http://tutorialspoint.com/unix_sockets/socket_client_example.htm
+
+mcrypt(3) - Linux man page
+https://linux.die.net/man/3/mcrypt
