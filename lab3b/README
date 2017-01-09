@@ -1,0 +1,18 @@
+UCLA Fall 2016 CS111 - Project 3B: File System Analysis Dau-Po Yu 504451468
+
+----------------------------------------------------------------------------
+
+Project 3 is expected to involve much more programming than any of the other projects.  You will design and implement programs to analyze file systems and diagnose corruption.  In part A, you will write a program to read the image of a file system, analyze it, and summarize its contents in several csv files. These csv files will be used in part B, where we will analyze the consistency of file system data structures and diagnose problems.
+
+This project includes:
+
+lab3b.py: python source code of this project.
+
+Makefile: Make the source code an executable. Use make, make run, make clean, and make tarball.
+	-default: compile the source code and run it, which outputs lab3b_check.txt
+	-run: compile the source code and run it, which outputs lab3b_check.txt
+	-clean: remove lab3b_check.txt
+	-dist: build the tarball, lab3b-504451468.tar.gz
+
+README: This current file that provides a description of the
+project.
